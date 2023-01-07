@@ -1,93 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title>CSS Template</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-* {
-  box-sizing: border-box;
+body 
+{
+background-color: powderblue;
 }
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
+h2
+{
+color: tomato;
+font-family: verdana;
+font-size: 300%;
+border: 2px solid darkblue;
+padding: 30px;
 }
-
-header {
-  background-color: teal;
-  padding: 30px;
+p 
+{
+color: red;
+font-family: courier;
+font-size: 160%;
+margin: 50px;
+}
+#myHeader 
+{
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
   text-align: center;
-  font-size: 35px;
-  color: white;
-}
-
-nav {
-  float: left;
-  width: 30%;
-  height: 300px;
-  background: white;
-  padding: 20px;
-}
-
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: white;
-  height: 300px; 
-}
-
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-footer {
-  background-color: teal;
-  padding: 10px;
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;d
-  }
 }
 </style>
+<title>Page Title</title>
+<link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
 <body>
 
-<h2>CSS Layout Float</h2>
-<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
-<p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+<img src="image/dog.jpg" alt="Golden Retriever" style="max-width:100%;height:auto;">
 
-<header>
-  <h2>Cities</h2>
-</header>
+<h1 id="myHeader">My Website</h1>
 
-<section>
-  <nav>
-    <ul>
-      <li><a href="#">London</a></li>
-      <li><a href="#">Paris</a></li>
-      <li><a href="#">Tokyo</a></li>
-    </ul>
-  </nav>
-  
-  <article>
-    <h1>London</h1>
-    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-  </article>
-</section>
-
-<footer>
-</footer>
-
+<h2 class="name">Juan</h2>
+<p>I have a golden retriever.</p>
+<h2 class="name">Daniel</h2>
+<p>His name is spike.</p>
+<h2 class="name">Mauricio</h2>
+<p>he likes to sleep.</p>
 </body>
 </html>
-
